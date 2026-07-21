@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <b>Also working with:</b> Ollama · llama.cpp · OpenRouter · OpenAI API · Anthropic API · CPT · OpenClaw
+  <b>Also working with:</b> Ollama · llama.cpp · OpenRouter · OpenAI API · Anthropic API · OpenCode · OpenClaw · LM Studio
 </p>
 
 ---
