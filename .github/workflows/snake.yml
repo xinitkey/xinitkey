@@ -16,6 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: trigger github-stats update
+        env:
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          gh workflow run update.yml --repo xinitkey/github-stats
+
       - name: generate snake animation
         uses: Platane/snk@v3
         with:
