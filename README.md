@@ -102,7 +102,7 @@
 
 <p align="center">
 
-🧠 AI Agents &nbsp;&nbsp; ⚙️ Linux &nbsp;&nbsp; 🖥 Assembly &nbsp;&nbsp; 👁 Computer Vision &nbsp;&nbsp; 🤖 Local LLMs
+🧠 Local LLMs &nbsp;&nbsp; ⚙️ Linux &nbsp;&nbsp; 🖥 FastAPI &nbsp;&nbsp; 👁 Computer Science &nbsp;&nbsp; 🤖 Aiogram
 
 </p>
 
