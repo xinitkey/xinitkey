@@ -9,9 +9,9 @@
  ╚═╝  ╚═╝ ╚═╝ ╚═╝  ╚═══╝ ╚═╝    ╚═╝    ╚═╝  ╚═╝ ╚══════╝    ╚═╝  
 ```
 
-### AI • Linux • Python • FastAPI
+<h3>AI • Linux • Python • FastAPI</h3>
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=A9FEF7&center=true&vCenter=true&width=600&lines=Telegram+Bots+Developer;AI+Integrator;FastAPI;Python;Linux+Enthusiast;Creating+what+is+missing..." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=A9FEF7&center=true&vCenter=true&width=700&lines=Telegram+Bots+Developer;AI+Integrator;FastAPI;Python;Linux+Enthusiast;Creating+what+is+missing..." alt="Typing SVG" />
 
 </div>
 
