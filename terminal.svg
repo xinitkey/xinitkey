@@ -23,43 +23,43 @@
     <circle cx="22" cy="18" r="6" fill="#ff5f56"/>
     <circle cx="42" cy="18" r="6" fill="#ffbd2e"/>
     <circle cx="62" cy="18" r="6" fill="#27c93f"/>
-    <text x="380" y="23" fill="#8b949e" font-size="13" text-anchor="middle">san@github: ~</text>
+    <text x="380" y="23" fill="#8b949e" font-size="13" text-anchor="middle">xinitkey@github: ~</text>
 
     <!-- body -->
     <g font-size="15" fill="#c9d1d9">
 
       <!-- line 1 -->
-      <text x="24" y="68"><tspan fill="#7ee787">san@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
+      <text x="24" y="68"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
       <g clip-path="url(#clipCmd1)"><text x="172" y="68" fill="#c9d1d9">whoami</text></g>
       <g opacity="0"><text x="24" y="94" fill="#79c0ff">san</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+1.0s" dur="0.3s" fill="freeze"/></g>
 
       <!-- line 2 -->
-      <text x="24" y="132"><tspan fill="#7ee787">san@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
+      <text x="24" y="132"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
       <g clip-path="url(#clipCmd2)"><text x="172" y="132" fill="#c9d1d9">cat interests.txt</text></g>
       <g opacity="0">
-        <text x="24" y="158" fill="#e6edf3">AI · Assembly · Linux · Computer Vision</text>
-        <text x="24" y="180" fill="#e6edf3">Automation · Network · Microprocessors</text>
+        <text x="24" y="158" fill="#e6edf3">FastAPI · Python · Linux · Computer Scince</text>
+        <text x="24" y="180" fill="#e6edf3">Automation · Network · Microservices</text>
         <animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+3.0s" dur="0.3s" fill="freeze"/>
       </g>
 
       <!-- line 3 -->
-      <text x="24" y="218"><tspan fill="#7ee787">san@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
+      <text x="24" y="218"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
       <g clip-path="url(#clipCmd3)"><text x="172" y="218"><tspan fill="#c9d1d9">echo $</tspan><tspan fill="#d2a8ff">CURRENT_PROJECT</tspan></text></g>
-      <g opacity="0"><text x="24" y="244" fill="#79c0ff">Saiko</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+5.1s" dur="0.3s" fill="freeze"/></g>
+      <g opacity="0"><text x="24" y="244" fill="#79c0ff">Tracebug</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+5.1s" dur="0.3s" fill="freeze"/></g>
 
       <!-- line 4 -->
-      <text x="24" y="282"><tspan fill="#7ee787">san@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
+      <text x="24" y="282"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
       <g clip-path="url(#clipCmd4)"><text x="172" y="282" fill="#c9d1d9">cat currently_learning.txt</text></g>
       <g opacity="0">
-        <text x="24" y="308" fill="#e6edf3">NASM · Computer Vision · CUDA</text>
-        <text x="24" y="330" fill="#e6edf3">LLMs · Cybersecurity</text>
+        <text x="24" y="308" fill="#e6edf3">REST API · Aiogram · Linux · Docker </text>
+        <text x="24" y="330" fill="#e6edf3">Local LLMs · Cybersecurity · Alembic · 3x-ui</text>
         <animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+7.4s" dur="0.3s" fill="freeze"/>
       </g>
 
       <!-- line 5 -->
-      <text x="24" y="368"><tspan fill="#7ee787">san@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
+      <text x="24" y="368"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
       <g clip-path="url(#clipCmd5)"><text x="172" y="368" fill="#c9d1d9">./future.sh</text></g>
-      <g opacity="0"><text x="24" y="394" fill="#ffa657">Building things that matter...</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+9.1s" dur="0.3s" fill="freeze"/></g>
+      <g opacity="0"><text x="24" y="394" fill="#ffa657">Building things that benefits everyone...</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+9.1s" dur="0.3s" fill="freeze"/></g>
 
       <!-- moving blinking cursor -->
       <rect x="24" y="395" width="10" height="16" fill="#7ee787" opacity="0">
