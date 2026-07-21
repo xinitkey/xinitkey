@@ -53,7 +53,7 @@
 
 <!-- PINNED-PROJECTS:START -->
 <p align="center">
-  <a href="https://github.com/"><img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/project-card.svg" width="340" /></a>
+  <a href="https://github.com/xinitkey/tracebug"><img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/project-card.svg" width="340" /></a>
 </p>
 <!-- PINNED-PROJECTS:END -->
 
