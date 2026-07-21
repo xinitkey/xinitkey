@@ -96,7 +96,7 @@
 
 ---
 
----
+<div align="center">
 
 ## Currently Learning
 
@@ -106,7 +106,7 @@
 
 </p>
 
-**Progress**
+**Learning Progress**
 
 ```
 Linux              ██████████████░░  90%
@@ -114,6 +114,8 @@ FastAPI            ████████████░░░░  80%
 Python             ████████████░░░░  75%
 Aiogram            █████████████░░░  85%
 ```
+
+</div>
 
 ---
 
