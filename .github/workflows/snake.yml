@@ -20,7 +20,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          gh workflow run update.yml --repo xinitkey/github-stats
+          gh workflow run update.yml --repo xinitkey/github-stats || echo "skip: no ACCESS_TOKEN secret set"
 
       - name: generate snake animation
         uses: Platane/snk@v3
