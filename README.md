@@ -46,7 +46,7 @@
 │    • ClaudeCode, Opencode, etc                   │
 │    • network, bash, scripting etc                │
 │    • just love programming in a cozy setting     │
-                                            │
+│                                                  │
 ╰──────────────────────────────────────────────────╯
 ```
 
