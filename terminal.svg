@@ -31,7 +31,7 @@
       <!-- line 1 -->
       <text x="24" y="68"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
       <g clip-path="url(#clipCmd1)"><text x="172" y="68" fill="#c9d1d9">whoami</text></g>
-      <g opacity="0"><text x="24" y="94" fill="#79c0ff">san</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+1.0s" dur="0.3s" fill="freeze"/></g>
+      <g opacity="0"><text x="24" y="94" fill="#79c0ff">xinitkey</text><animate attributeName="opacity" from="0" to="1" begin="clockAnim.begin+1.0s" dur="0.3s" fill="freeze"/></g>
 
       <!-- line 2 -->
       <text x="24" y="132"><tspan fill="#7ee787">xinitkey@github</tspan><tspan fill="#8b949e">:~$ </tspan></text>
