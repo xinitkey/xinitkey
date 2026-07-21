@@ -8,6 +8,6 @@
 <text x="24" y="98" fill="#8b949e" font-size="13">API</text>
 
   <circle cx="28" cy="132" r="6" fill="#f1e05a"/>
-  <text x="40" y="137" fill="#8b949e" font-size="12">Python</text>
+  <text x="40" y="137" fill="#8b949e" font-size="12">JavaScript</text>
   <text x="130" y="137" fill="#8b949e" font-size="12">&#9733; 1</text>
 </svg>
