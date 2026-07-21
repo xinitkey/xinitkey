@@ -4,8 +4,17 @@
     <path fill="#8b949e" d="M0 2a2 2 0 012-2h9.5a.25.25 0 01.25.25V5H14V.25A.25.25 0 0114.25 0H16a2 2 0 012 2v12.5a.25.25 0 01-.25.25h-1.5a.25.25 0 01-.25-.25V13H2v1.5a.25.25 0 01-.25.25H.25A.25.25 0 010 14.5V2z"/>
   </g>
   <text x="46" y="38" fill="#58a6ff" font-size="16" font-weight="600">warehouse-electronics</text>
+<<<<<<< HEAD
   
   <circle cx="28" cy="92" r="6" fill="#f34b7d"/>
   <text x="40" y="97" fill="#8b949e" font-size="12">C++</text>
   <text x="130" y="97" fill="#8b949e" font-size="12">&#9733; 0</text>
+=======
+  <text x="24" y="78" fill="#8b949e" font-size="13">Warehouse management for electronics</text>
+<text x="24" y="98" fill="#8b949e" font-size="13">components</text>
+
+  <circle cx="28" cy="132" r="6" fill="#f34b7d"/>
+  <text x="40" y="137" fill="#8b949e" font-size="12">C++</text>
+  <text x="130" y="137" fill="#8b949e" font-size="12">&#9733; 0</text>
+>>>>>>> 9575b01 (fix: use local mode for project card generation in CI workflow)
 </svg>
