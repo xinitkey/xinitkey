@@ -3,6 +3,7 @@ import sys
 import re
 import json
 import glob
+import argparse
 import urllib.request
 from xml.sax.saxutils import escape
 
@@ -47,6 +48,10 @@ def fetch_pinned(username, token):
     data = graphql(query, token)
     return data["data"]["user"]["pinnedItems"]["nodes"]
 
+def load_local_projects(config_path="projects.json"):
+    with open(config_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 def safe_filename(name):
     return re.sub(r"[^a-zA-Z0-9_-]", "-", name).lower()
 
@@ -66,10 +71,10 @@ def wrap_text(text, max_chars=46):
 def render_card_svg(repo):
     name = repo["name"]
     description = repo.get("description") or ""
-    lang = repo.get("primaryLanguage") or {}
-    lang_name = lang.get("name", "Unknown")
-    lang_color = lang.get("color") or "#8b949e"
-    stars = repo.get("stargazerCount", 0)
+    lang_name = repo.get("language") or repo.get("primaryLanguage", {}).get("name", "Unknown")
+    lang_color = repo.get("language_color") or repo.get("primaryLanguage", {}).get("color") or "#8b949e"
+    stars = repo.get("stars") or repo.get("stargazerCount", 0)
+    url = repo.get("url", "#")
 
     desc_lines = wrap_text(description)
     desc_svg = ""
@@ -106,13 +111,28 @@ def update_readme(readme_path, cards_markdown):
         f.write(new_content)
 
 if __name__ == "__main__":
-    username = sys.argv[1]
-    repo_owner_repo = sys.argv[2]  # e.g. "santa67creator/santa67creator", where card svgs + README live
-    token = os.environ["GITHUB_TOKEN"]
+    parser = argparse.ArgumentParser(description="Generate project cards for GitHub profile README")
+    parser.add_argument("--local", action="store_true", help="Read projects from local projects.json instead of GitHub API")
+    parser.add_argument("--config", default="projects.json", help="Path to local projects config (default: projects.json)")
+    parser.add_argument("username", nargs="?", help="GitHub username (required for API mode)")
+    parser.add_argument("repo_owner_repo", nargs="?", help="repo_owner/repo_name where card SVGs + README live (required for API mode)")
+    args = parser.parse_args()
 
-    repos = fetch_pinned(username, token)
+    if args.local:
+        repos = load_local_projects(args.config)
+        repo_owner_repo = os.environ.get("GITHUB_REPOSITORY") or "xinitkey/xinitkey"
+    else:
+        username = args.username
+        repo_owner_repo = args.repo_owner_repo
+        if not username or not repo_owner_repo:
+            parser.error("username and repo_owner_repo are required for API mode (use --local for local mode)")
+        token = os.environ.get("GITHUB_TOKEN")
+        if not token:
+            print("GITHUB_TOKEN not set, falling back to local mode")
+            repos = load_local_projects(args.config)
+        else:
+            repos = fetch_pinned(username, token)
 
-    # remove stale card files from previous runs
     for f in glob.glob("card-*.svg"):
         os.remove(f)
 
@@ -128,3 +148,4 @@ if __name__ == "__main__":
 
     cards_markdown = '<p align="center">\n' + "\n".join(cards_md_parts) + "\n</p>"
     update_readme("README.md", cards_markdown)
+    print(f"Generated {len(repos)} card(s)")
