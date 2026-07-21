@@ -16,11 +16,11 @@
 </div>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ollama,python,bash,linux,docker,git,postgresql,vim,fastapi,aiogram,opencode,opencv," />
+  <img src="https://skillicons.dev/icons?i=python,bash,linux,docker,git,github,postgresql,vim,fastapi,opencv," />
 </p>
 
 <p align="center">
-  <b>Also working with:</b> llama.cpp · OpenRouter · OpenAI API · Anthropic API · OpenClaw
+  <b>Also working with:</b> Ollama · llama.cpp · OpenRouter · OpenAI API · Anthropic API · CPT · OpenClaw
 </p>
 
 ---
@@ -56,6 +56,8 @@
   <a href="https://github.com/xinitkey/tracebug"><img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/project-card.svg" width="340" /></a>
 </p>
 <!-- PINNED-PROJECTS:END -->
+
+---
 
 ---
 
@@ -104,7 +106,7 @@
 
 </p>
 
-**Learning Progress**
+**Progress**
 
 ```
 Linux              ██████████████░░  90%
