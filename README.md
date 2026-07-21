@@ -25,27 +25,32 @@
 
 ---
 
+<div align="center">
+
 ## About Me
 
 ```
-╭──────────────────────────────────────────────╮
-│                                              │
-│  Self-taught developer from ...              │
-│                                              │
-│  I enjoy building:                           │
-│                                              │
-│   • FastAPI                                  │
-│   • Computer Science                         │
-│   • Local LLMs                               │
-│   • Docker                                   │
-│   • Linux                                    │
-│   • AI Integrations                          │
-│   • C++, C, Python and etc                   │
-│   • ClaudeCode, Opencode, etc                │
-│   • network, bash, scripting etc             │
-│   • just love programming in a cozy setting  │
-╰──────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────╮
+│                                                  │
+│   Self-taught developer from ...                 │
+│                                                  │
+│   I enjoy building:                              │
+│                                                  │
+│    • FastAPI                                     │
+│    • Computer Science                            │
+│    • Local LLMs                                  │
+│    • Docker                                      │
+│    • Linux                                       │
+│    • AI Integrations                             │
+│    • C++, C, Python and etc                      │
+│    • ClaudeCode, Opencode, etc                   │
+│    • network, bash, scripting etc                │
+│    • just love programming in a cozy setting     │
+                                            │
+╰──────────────────────────────────────────────────╯
 ```
+
+</div>
 
 ---
 
