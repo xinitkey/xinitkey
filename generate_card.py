@@ -52,6 +52,20 @@ def load_local_projects(config_path="projects.json"):
     with open(config_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+def merge_with_local_overrides(api_repos, local_projects):
+    overrides = {p["name"]: p for p in local_projects}
+    for repo in api_repos:
+        name = repo["name"]
+        if name in overrides:
+            ov = overrides[name]
+            repo["language"] = ov.get("language", repo.get("language"))
+            repo["language_color"] = ov.get("language_color", repo.get("language_color"))
+            if "description" in ov:
+                repo["description"] = ov["description"]
+            if "stars" in ov:
+                repo["stargazerCount"] = ov["stars"]
+    return api_repos
+
 def safe_filename(name):
     return re.sub(r"[^a-zA-Z0-9_-]", "-", name).lower()
 
@@ -132,6 +146,8 @@ if __name__ == "__main__":
             repos = load_local_projects(args.config)
         else:
             repos = fetch_pinned(username, token)
+            local = load_local_projects(args.config)
+            repos = merge_with_local_overrides(repos, local)
 
     for f in glob.glob("card-*.svg"):
         os.remove(f)

@@ -8,6 +8,14 @@
     "stars": 0
   },
   {
+    "name": "rowline",
+    "url": "https://github.com/xinitkey/rowline",
+    "description": "RowLine – row-based API tool",
+    "language": "Python",
+    "language_color": "#3572A5",
+    "stars": 1
+  },
+  {
     "name": "warehouse-electronics",
     "url": "https://github.com/xinitkey/warehouse-electronics",
     "description": "Warehouse management for electronics components",
