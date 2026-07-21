@@ -45,8 +45,10 @@ jobs:
           git add trophy.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "update trophy svg" && git push)
       - name: generate pinned project cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 generate_card.py --local
+          python3 generate_card.py "xinitkey" "xinitkey/xinitkey"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- 'card-*.svg' README.md
