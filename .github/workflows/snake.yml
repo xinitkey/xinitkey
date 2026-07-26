@@ -43,11 +43,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: generate trophy
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        uses: ryo-ma/github-profile-trophy@v0.7.0
         with:
           username: ${{ github.repository_owner }}
-          output_path: trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          output: trophy.svg
+          no-frame: true
+          no-bg: true
 
       - name: commit trophy svg
         run: |
