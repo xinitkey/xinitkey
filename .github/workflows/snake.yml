@@ -43,12 +43,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: generate trophy
-        uses: ryo-ma/github-profile-trophy@v0.7.0
-        with:
-          username: ${{ github.repository_owner }}
-          output: trophy.svg
-          no-frame: true
-          no-bg: true
+        run: |
+          curl -s "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&no-frame=true&no-bg=true" -o trophy.svg
 
       - name: commit trophy svg
         run: |
