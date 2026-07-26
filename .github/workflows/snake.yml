@@ -65,5 +65,6 @@ jobs:
 
       - name: push all changes
         run: |
-          git pull --rebase origin main
+          git fetch origin main
+          git rebase -X theirs origin/main || git rebase --skip
           git push
