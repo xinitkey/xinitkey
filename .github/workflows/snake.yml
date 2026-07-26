@@ -2,8 +2,8 @@ name: generate snake animation
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # runs every 6 hours
-  workflow_dispatch: # allows manual trigger from the Actions tab
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -20,7 +20,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          gh workflow run update.yml --repo xinitkey/github-stats || echo "skip: no ACCESS_TOKEN secret set"
+          if [ -n "$GH_TOKEN" ]; then
+            gh workflow run update.yml --repo xinitkey/github-stats
+          else
+            echo "skip: no ACCESS_TOKEN secret set"
+          fi
 
       - name: generate snake animation
         uses: Platane/snk@v3
@@ -29,6 +33,7 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
       - name: push snake svg to the output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -50,6 +55,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add trophy.svg
           git diff --quiet && git diff --staged --quiet || git commit -m "update trophy svg"
+
       - name: generate pinned project cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -58,4 +64,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- 'card-*.svg' README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "update pinned project cards" && git push)
+          git diff --quiet && git diff --staged --quiet || git commit -m "update pinned project cards"
+
+      - name: push all changes
+        run: |
+          git pull --rebase origin main
+          git push
