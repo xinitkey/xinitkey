@@ -43,8 +43,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: generate trophy
+        env:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          curl -s "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&no-frame=true&no-bg=true" -o trophy.svg
+          python3 trophy.py
 
       - name: commit trophy svg
         run: |
