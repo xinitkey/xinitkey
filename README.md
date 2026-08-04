@@ -88,7 +88,7 @@
 ## Trophies
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/trophy.svg" />
+  <img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/trophy.svg" width="900" />
 </p>
 
 ---
