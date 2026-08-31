@@ -60,6 +60,7 @@
 <p align="center">
   <a href="https://github.com/xinitkey/vpn-telegram-bot"><img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/card-vpn-telegram-bot.svg" width="340" /></a>
   <a href="https://github.com/xinitkey/rowline"><img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/card-rowline.svg" width="340" /></a>
+  <a href="https://github.com/xinitkey/warehouse-electronics"><img src="https://raw.githubusercontent.com/xinitkey/xinitkey/main/card-warehouse-electronics.svg" width="340" /></a>
 </p>
 <!-- PINNED-PROJECTS:END -->
 
